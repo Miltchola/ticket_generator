@@ -1,0 +1,60 @@
+/* BODY */
+
+header {
+    margin-top: 18px;
+}
+
+body{
+    display: grid;
+    place-items: center;  /* Centraliza horizontal e verticalmente*/
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+
+    background-image:
+        url("../assets/images/pattern-lines.svg"),
+        url("../assets/images/pattern-squiggly-line-top.svg"),
+        url("../assets/images/pattern-circle.svg"),
+        url("../assets/images/pattern-squiggly-line-bottom-desktop.svg"),  
+        url("../assets/images/background-desktop.png");
+
+    background-position: top center, top right, center right, bottom left, center;  
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    min-height: 97vh;
+}
+
+.hero {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+    font-size: 30px;
+}
+
+h2 {
+    color: hsl(252, 6%, 83%);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+
+/* TICKET */
+
+.ticket {
+    background-image:
+        url("../assets/images/logo-full.svg");
+
+    background-position: top left;
+
+    background-repeat: no-repeat;
+}
+
+.ticket-img {
+    height: 200px;
+    width: auto;
+}

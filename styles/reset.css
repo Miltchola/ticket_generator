@@ -1,0 +1,52 @@
+/* Reset CSS Moderno */
+
+/* Remove margens, paddings e define border-box para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove estilos padrão da lista */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove estilos padrão dos links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ajusta fontes para uma base consistente */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Remove bordas de inputs e botões no foco */
+button, input, textarea {
+    border: none;
+    outline: none;
+    font: inherit;
+}
+
+/* Torna imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Remove estilos padrão do botão */
+button {
+    background: none;
+    cursor: pointer;
+}
+
+/* Remove diferenças visuais em diferentes navegadores */
+html {
+    scroll-behavior: smooth;
+}

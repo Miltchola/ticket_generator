@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Inconsolata">
+
+  
+  <title>Conference ticket generator</title>
+
+  
+</head>
+<body>
+
+  <!-- Form starts -->
+
+  <header>
+
+    <img src="assets/images/logo-full.svg" alt="Logo">
+
+  </header>
+
+  <div class="hero">
+
+    <h1>Your Journey to Coding Conf <br> Starts Here!</h1>
+
+    <h2>Secure your spot at next year's biggest coding conference.</h2>
+
+  </div>
+
+  <div class="main-content">
+
+    <div class="upload">
+      <h5>Upload Avatar</h5>
+
+      <!-- UPLOAD DE IMAGEM -->
+      <div class="upload-image">
+        <input class="upload-pic" type="file" accept="image/png, image/jpg">
+        
+        <img class="upload-icon" src="assets/images/icon-upload.svg" alt="Upload">
+
+        <h6>Drag and drop or click to upload</h6>
+
+      </div>
+
+      <div class="info">
+
+        <img src="assets/images/icon-info.svg" alt="Info Icon">
+        <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+
+      </div>
+       
+      
+    </div>
+
+    <div class="input-section">
+
+      <h5>Full Name</h5>
+      
+      <input class="text-input" id="nome" type="text" placeholder="">
+
+    </div>
+
+    <div class="input-section">
+
+      <h5>Email Address</h5>
+      
+      <input class="text-input" id="email" type="text" placeholder="example@email.com">
+
+    </div>
+
+    <div class="input-section">
+
+      <h5>GitHub Username</h5>
+      
+      <input class="text-input" id="github" type="text" placeholder="@yourusername">
+
+    </div>
+
+
+    <button onclick="gerarTicket()">Generate My Ticket</button>
+
+  </div>
+  
+
+  
+
+
+  <!-- Form ends -->
+
+  <!-- Generated tickets starts -->
+  
+
+  <!-- Generated tickets ends -->
+
+  <script src="script.js"></script> <!-- LINKA ARQUIVO JAVASCRIPT -->
+</body>
+</html>

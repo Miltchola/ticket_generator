@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/ticket.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inconsolata">
+
+    <title>Conference ticket generator</title>
+</head>
+<body>
+
+    <header>
+
+        <img src="assets/images/logo-full.svg" alt="Logo">
+    
+    </header>
+    
+    <div class="hero">
+    
+        <h1>Congrats, </h1> <h1 class="ticket-nome" id="ticket-nome"></h1>
+        <h1>Your ticket is ready.</h1>
+    
+        <h2>We've emailed your ticket to <br> 
+            <p id="ticket-email"></p>
+             and will send updates in <br> the run up to the event.</h2>
+    
+    </div>
+
+    <div class="ticket">
+        <img class="ticket-img" src="assets/images/pattern-ticket.svg" alt="Imagem Ticket">
+
+        <img src="assets/images/logo-full.svg" alt="">
+
+
+    </div>
+    
+
+    <!-- SCRIPT FINAL -->
+    <script>
+        // Pega os parâmetros da URL
+        const params = new URLSearchParams(window.location.search);
+        const nome = params.get('nome');
+        const email = params.get('email');
+        const github = params.get('github');
+
+        // Exibe as informações no ticket
+        document.getElementById('ticket-nome').textContent = `${nome}`;
+        document.getElementById('ticket-email').textContent = `${email}`;
+        document.getElementById('ticket-github').textContent = `${github}`;
+    </script>
+
+</body>
+</html>
