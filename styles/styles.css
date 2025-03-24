@@ -39,6 +39,7 @@ body {
 
         background-position: top center, top right, center right, bottom left, center;
         background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-attachment: fixed;
         min-height: 98.3vh;
         font-family: 'Inconsolata', monospace;
     }
@@ -56,7 +57,23 @@ body {
 
         background-position: top center, top right, center right, bottom left, center;
         background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-attachment: fixed;
+        font-family: 'Inconsolata', monospace;
+    }
+}
 
+@media screen and (max-width: 420px) {
+    body {
+        background-image:
+            url("../assets/images/pattern-lines.svg"),
+            url("../assets/images/pattern-squiggly-line-top.svg"),
+            url("../assets/images/pattern-circle.svg"),
+            url("../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+            url("../assets/images/background-mobile.png");
+
+        background-position: top center, top right, center right, bottom left, center;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-attachment: fixed;
         font-family: 'Inconsolata', monospace;
     }
 }
