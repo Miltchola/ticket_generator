@@ -16,8 +16,6 @@
 </head>
 <body>
 
-  <!-- Form starts -->
-
   <header>
 
     <img src="assets/images/logo-full.svg" alt="Logo">
@@ -39,18 +37,31 @@
 
       <!-- UPLOAD DE IMAGEM -->
       <div class="upload-image">
-        <input class="upload-pic" type="file" accept="image/png, image/jpg">
-        
-        <img class="upload-icon" src="assets/images/icon-upload.svg" alt="Upload">
+        <input class="upload-pic" id="inputImagem" type="file" accept="image/png, image/jpg">
 
-        <h6>Drag and drop or click to upload</h6>
+        <div class="input_img">
+
+          <img id="uploadIcon" class="upload-icon" src="assets/images/icon-upload.svg" alt="Upload">
+
+          <h6>Drag and drop or click to upload</h6>
+
+        </div>
+
+
+        <!-- ESSA PARTE ESTARÁ ESCONDIDA ATÉ A IMAGEM SER ADICIONADA! -->
+        <div class="input_img_section_buttons">
+          
+          <button class="img_button" id="remove">Remover imagem</button>
+          <button class="img_button" id="change">Mudar imagem</button>
+          
+        </div>
 
       </div>
 
       <div class="info">
 
-        <img src="assets/images/icon-info.svg" alt="Info Icon">
-        <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+        <img id="alert-info" src="assets/images/icon-info.svg" alt="Info Icon">
+        <p id="alert-image">Upload your photo (JPG or PNG, max size: 500KB).</p>
 
       </div>
        
@@ -63,6 +74,8 @@
       
       <input class="text-input" id="nome" type="text" placeholder="">
 
+      <p class="alert-nome" id="alert-nome">You must insert your name to Generate the Ticket!</p>
+
     </div>
 
     <div class="input-section">
@@ -70,6 +83,8 @@
       <h5>Email Address</h5>
       
       <input class="text-input" id="email" type="text" placeholder="example@email.com">
+
+      <p class="alert-email" id="alert-email">Please insert a valid e-mail address!</p>
 
     </div>
 
@@ -79,6 +94,8 @@
       
       <input class="text-input" id="github" type="text" placeholder="@yourusername">
 
+      <p class="alert-github" id="alert-github">You must insert your github account!</p>
+
     </div>
 
 
@@ -86,16 +103,6 @@
 
   </div>
   
-
-  
-
-
-  <!-- Form ends -->
-
-  <!-- Generated tickets starts -->
-  
-
-  <!-- Generated tickets ends -->
 
   <script src="script.js"></script> <!-- LINKA ARQUIVO JAVASCRIPT -->
 </body>

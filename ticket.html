@@ -33,25 +33,32 @@
     <div class="ticket">
         <img class="ticket-img" src="assets/images/pattern-ticket.svg" alt="Imagem Ticket">
 
-        <img src="assets/images/logo-full.svg" alt="">
+        <img class="ticket-element logo" src="assets/images/logo-full.svg" alt="logo">
 
+
+        <div class="data-texto">
+            <p class="ticket-element data" id="data-atual"></p> 
+
+            <p class="ticket-element texto"> / Austin, TX</p>
+
+        </div>
+
+        <img class="ticket-element ticket-imagem" id="ticket-imagem" alt="Profile Picture">
+
+        <!-- ISSO AQUI NÃO FUNCIONOU! -->
+        <h5 class="ticket-element nome" id="ticket-nome-info">Jonatan Kristof</h5> <!-- CONSERTAR ERRO AQUI !! -->
+
+        <img class="ticket-element github" src="assets/images/icon-github.svg" alt="Github Icon">
+
+        <p class="ticket-element github-nome" id="ticket-github"></p>
+
+        <h2 class="ticket-element cod">#01609</h2>
 
     </div>
     
 
-    <!-- SCRIPT FINAL -->
-    <script>
-        // Pega os parâmetros da URL
-        const params = new URLSearchParams(window.location.search);
-        const nome = params.get('nome');
-        const email = params.get('email');
-        const github = params.get('github');
+    <!-- SCRIPT FINAL DO TICKET -->
 
-        // Exibe as informações no ticket
-        document.getElementById('ticket-nome').textContent = `${nome}`;
-        document.getElementById('ticket-email').textContent = `${email}`;
-        document.getElementById('ticket-github').textContent = `${github}`;
-    </script>
-
+    <script src="ticket.js"></script> <!-- LINKA ARQUIVO JAVASCRIPT -->
 </body>
 </html>

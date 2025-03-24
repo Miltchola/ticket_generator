@@ -20,7 +20,40 @@ body{
 
     background-position: top center, top right, center right, bottom left, center;  
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed;
     min-height: 97vh;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        background-image: 
+            url("../assets/images/pattern-lines.svg"),
+            url("../assets/images/pattern-squiggly-line-top.svg"),
+            url("../assets/images/pattern-circle.svg"),
+            url("../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),  
+            url("../assets/images/background-tablet.png");
+
+        background-position: top center, top right, center right, bottom left, center;  
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        min-height: 98.3vh; 
+        font-family: 'Inconsolata', monospace;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-image: 
+            url("../assets/images/pattern-lines.svg"),
+            url("../assets/images/pattern-squiggly-line-top.svg"),
+            url("../assets/images/pattern-circle.svg"),
+            url("../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),  
+            url("../assets/images/background-mobile.png");
+
+        background-position: top center, top right, center right, bottom left, center;  
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+
+        font-family: 'Inconsolata', monospace;
+    }
 }
 
 .hero {
@@ -35,6 +68,17 @@ h1 {
     font-size: 30px;
 }
 
+.ticket-nome {
+    /* GRADIENTE DE TEXTO */
+    background-image: linear-gradient(90deg,hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    background-clip: text; /* faz o gradiente ficar exposto só na parte do texto*/
+    color: transparent; /* deixa a cor do texto invisível pra mostrar o gradiente*/
+}
+
+#ticket-email {
+    color: hsl(7, 86%, 67%);
+}
+
 h2 {
     color: hsl(252, 6%, 83%);
     font-size: 14px;
@@ -42,19 +86,94 @@ h2 {
     margin-bottom: 30px;
 }
 
+h5 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+    font-size: 18px;
+}
+
 
 /* TICKET */
 
 .ticket {
-    background-image:
-        url("../assets/images/logo-full.svg");
-
-    background-position: top left;
-
-    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
 }
 
 .ticket-img {
+    display: block;
+    width: 90%;
     height: 200px;
     width: auto;
+}
+
+.ticket-element {
+    position: absolute;
+}
+
+.data-texto {
+    display: flex;
+}
+
+.data {
+    top: 30%;
+    left: 5%;
+
+    font-family: 'Inconsolata', monospace;
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+}
+
+.texto {
+    top: 30%;
+    left: 28%;
+
+    font-family: 'Inconsolata', monospace;
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+}
+
+.logo {
+    top: 10%;
+    left: 5%;
+}
+
+.ticket-imagem {
+    bottom: 10%;
+    left: 5%;
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+.github {
+    bottom: 10%;
+    left: 20%;
+}
+
+.nome {
+    bottom: 20%;
+    left: 20%;
+}
+
+.github-nome {
+    bottom: 10%;
+    left: 27%;
+
+    font-family: 'Inconsolata', monospace;
+    color: hsl(0, 0%, 100%);
+    font-size: 13px;
+}
+
+.cod {
+    font-family: 'Inconsolata', monospace;
+    color: hsl(252, 6%, 83%);
+    opacity: 0.8;
+    font-size: 25px;
+
+    bottom: 25%;
+    right: 0%;
+
+    transform: rotate(90deg); /* Girar o texto de ladinho    */
 }
