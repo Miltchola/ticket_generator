@@ -1,10 +1,26 @@
 // Seleciona os elementos necessários
 // Check de Imagem
-const inputImagem = document.getElementById('inputImagem'); // Pega a imagem
 const uploadIcon = document.querySelector('.upload-icon');
+
 const uploadText = document.querySelector('.input_img h6');
 const imgButtons = document.querySelector('.input_img_section_buttons');
 const inputImgContainer = document.querySelector('.input_img');
+
+const inputImagem = document.getElementById('inputImagem'); // Pega a imagem
+
+
+// Evento pra quando a página é aberta
+window.addEventListener ('pageshow', function(event){
+    localStorage.clear(); // Limpa armazenamento Local
+
+    // Limpa todos os espaços da Tela quando a página abre
+    document.getElementById('nome').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('github').value = '';
+    document.getElementById('inputImagem').value = '';
+
+});
+
 
 // Função para validar e exibir a imagem carregada
 inputImagem.addEventListener('change', (event) => {
@@ -88,10 +104,10 @@ inputImagem.addEventListener('change', (event) => {
 // Função para passar dados como parâmetro
 // Cria a nova página do Ticket
 function gerarTicket() {
+
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
     const github = document.getElementById('github').value;
-    const inputImagem = document.getElementById('inputImagem');
 
     if (inputImagem.files.length === 0) {
         document.getElementById('alert-info').style.visibility = 'hidden';
